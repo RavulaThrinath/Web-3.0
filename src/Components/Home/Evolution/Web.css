@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800&family=Overpass:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/11cb6974aad7e20f9f6f7c2337e25d64?family=Copyright+Klim+Type+Foundry');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Syne+Mono&display=swap');
+@import url('https://db.onlinewebfonts.com/c/30a71dcf9a1c39558ca4e97c92a4b2fa?family=Noe+Display+Bold');
+/* font-family: 'Cinzel Decorative', cursive;
+font-family: 'Outfit', sans-serif;
+font-family: "Noe Display Bold", sans-serif;
+font-family: 'Overpass', sans-serif; 
+--font-family: 'Josefin Sans', sans-serif;
+--web-font: 'Copyright Klim Type Foundry', sans-serif; */
+
+
+.Web-main {
+    width: 100%;
+    height: 100vh;
+}
+
+.title-parent {
+    text-align: center;
+    margin: 50px 0 80px 0;
+}
+
+.web-title {
+    position: relative;
+    color: #222222;
+    font-size: 33px;
+    font-family: "Noe Display Bold", sans-serif;
+    letter-spacing: .5px;
+    font-weight: 800;
+}
+.web-title::before {
+    content: "";
+    position:absolute;
+    background: #6d6d6d2d;
+    width: 250px;
+    height: 1px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.main-parent {
+    /* max-width:1200px; */
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent1,
+.parent2,
+.parent3 {
+    position: relative;
+    width: 20%;
+    height: 270px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px #08070710;
+    transition: all .1s ease-out;
+    margin: 0 40px;
+}
+
+.parent1:hover,
+.parent2:hover,
+.parent3:hover {
+    transform: translateY(-3px);
+}
+
+
+.parent1 {
+    display:block;
+    background: linear-gradient(to right, #ca2e4503 50%, white 50% ) ;
+    background-position: right bottom;
+    background-size: 200% 100%;
+
+}
+.parent1:hover {
+    background-position: left bottom;
+}
+
+.parent2 {
+    background: #F2C14813;
+}
+
+.parent3{
+    background: #584AA913;
+}
+
+.parent1 p,
+.parent2 pp,
+.parent3 ppp {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.parent1 p::before,
+.parent2 pp::before,
+.parent3 ppp::before {
+    position: absolute;
+    width: 150%;
+    height: 25px;
+    /* background: #D5475D; */
+    /* background: #ca2e46; */
+    transform: rotate(-45deg) translateY(-13px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Outfit";
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.parent1 p::before {
+    content: "Web 1.0";
+    background: #ca2e46;
+}
+
+.parent2 pp::before {
+    content: "Web 2.0";
+    background: #F2C148;
+}
+
+.parent3 ppp::before {
+    content: "Web 3.0";
+    background: #584AA9;
+}
+
+.parent1 p::after,
+.parent2 pp::after,
+.parent3 ppp::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    z-index: -1;
+}
+
+.parent1 p::after {
+    background: #c55062;
+    box-shadow: 110px -110px #c55062;
+}
+
+.parent2 pp::after {
+    background: #e0a91c;
+    box-shadow: 110px -110px #e0a91c;
+}
+
+.parent3 ppp::after {
+    background: #3f3386;
+    box-shadow: 110px -110px #3f3386;
+}
+
+.parent-text {
+    font-size: 17px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    width: 80%;
+    line-height: 20px;
+    display: flex;
+    color: #1b1b1bb2;
+    /* text-transform: capitalize; */
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+
+.parent-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.parent-content img {
+    width: 70px;
+    height: 67px;
+    margin: 20px 0 30px 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.rel1 {
+    margin-right: 155px;
+}
+.rel2 {
+    margin-right: 100px;
+}
+.rel3 {
+    margin-right: 52px;
+}
+.Context {
+    font-size: 20px;
+    font-family: "Noe Display Bold", sans-serif;
+    /* text-transform: uppercase; */
+    margin-bottom:7px;
+    font-weight: 800;
+}

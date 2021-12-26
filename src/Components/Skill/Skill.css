@@ -1,0 +1,13 @@
+.skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.skill-icon {
+    font-size: 80px;
+    opacity: 0.3;
+    color: #313131;
+}

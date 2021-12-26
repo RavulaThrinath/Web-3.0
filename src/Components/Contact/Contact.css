@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Outfit:wght@300;400;500&display=swap');
+
+
+.formContainer {
+    position: relative;
+    width: 70%;
+    margin:auto;
+    padding: 150px 100px;
+    margin-top: 100px;
+    background:#ffffff;
+    border-radius:20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,.15);
+}
+.formContainer p {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 200px;
+    height: 200px;
+    /* background: royalblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.formContainer p::before {
+    content: "Contact Me";
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background: royalblue;
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Outfit";
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+.formContainer p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #2a65ca;
+    z-index: -1;
+    box-shadow: 190px -190px #2a65ca ;
+}
+
+
+
+.formclass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* form starting stylings ------------------------------- */
+.group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    font-size: 18px;
+    padding: 10px 10px 8px 3px;
+    display: block;
+    width: 350px;
+    border: none;
+    left: 2px;
+    border-bottom: 1.5px solid #757575;
+    background: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+    color: #999;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    position: absolute;
+    pointer-events: none;
+    left: 3px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.required:after {
+    content: " *";
+    font-size: 15px;
+    color: rgb(255, 0, 0);
+}
+
+/* active state */
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -15px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 350px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #5264AE;
+    transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+input:focus~.bar:before,
+input:focus~.bar:after,
+textarea:focus~.bar:before,
+textarea:focus~.bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+/* .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+} */
+
+/* active state */
+/* input:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+} */
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+
+
+.css-button-3d-sky {
+    min-width: 150px;
+    height: 40px;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    padding: 5px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #3a86ff;
+    box-shadow: 0 5px #4433ff;
+}
+
+.css-button-3d-sky:hover {
+    box-shadow: 0 3px #4433ff;
+    top: 1px;
+}
+
+.css-button-3d-sky:active {
+    box-shadow: 0 0 #4433ff;
+    top: 5px;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+
+.css-button-rounded {
+    text-decoration: none;
+    font-size: 11px;
+    color: #fff;
+    padding: 6px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    border: 1.5px solid #000000;
+    background: #000000;
+    margin-top: 5px;
+    margin-left: 5px;
+    letter-spacing: .5px;
+}
+
+.css-button-rounded:hover {
+    background: #f5f5f5;
+    color: #000000
+}
