@@ -7,7 +7,6 @@ import About from "../src/Components/About/About";
 import Blogs from "../src/Components/Blogs/Blogs";
 import Contact from "../src/Components/Contact/Contact";
 import Scrolltop from "./Components/ScrollTop/Scrolltop";
-import Footer from "./Components/Footer/Footer";
 import Nft from "./Components/ArticlesPage/Nft"
 
 function App() {
