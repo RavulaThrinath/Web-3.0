@@ -1,7 +1,6 @@
 import React from "react";
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./Footer.css";
-import facebook from "../Assets/Facebook.svg";
 import instagram from "../Assets/Instagram.svg";
 import twitter from "../Assets/Twitter.svg";
 import linkedin from "../Assets/LinkedIn.svg";
@@ -16,13 +15,11 @@ const Footer = () => {
        <footer className="footer-bar">
       <div className="explore">
       <Link className="explore-links" to="/">Home</Link>
-      <Link className="explore-links" to="/">About</Link>
-      <Link className="explore-links" to="/">Blog</Link>
-      <Link className="explore-links" to="/">Projects</Link>
-      <Link className="explore-links" to="/">Contact</Link>
+      <Link className="explore-links" to="/about">About</Link>
+      <Link className="explore-links" to="/blog">Blog</Link>
+      <Link className="explore-links" to="/contact">Contact</Link>
       </div>
       <div className="logos">
-        <img src={facebook} alt="" />
         <img src={instagram} alt="" />
         <img src={twitter} alt="" />
         <img src={linkedin} alt="" />

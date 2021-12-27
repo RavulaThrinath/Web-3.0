@@ -7,7 +7,10 @@ import About from "../src/Components/About/About";
 import Blogs from "../src/Components/Blogs/Blogs";
 import Contact from "../src/Components/Contact/Contact";
 import Scrolltop from "./Components/ScrollTop/Scrolltop";
-import Nft from "./Components/ArticlesPage/Nft"
+import Nft from "./Components/ArticlesPage/NFT/Nft";
+import Blockchainmap from "./Components/ArticlesPage/BlockchainMap/Blockchainmap";
+import Footer from "../src/Components/Footer/Footer"
+
 
 function App() {
   return (
@@ -19,9 +22,11 @@ function App() {
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/blogs" element={<Blogs />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
-          <Route exact path="/Nft" element={<Nft />}></Route>
+          <Route exact path="/Nft" element={<Nft mainTitle={`What You Need To Know About \n Non-Fungible Tokens (NFTs)`}  />}></Route>
+          <Route exact path="/Blockchain" element={<Blockchainmap mainTitle={`How to become a blockchain developer`}  />}></Route>
         </Routes>
         <Scrolltop />
+        <Footer />
         </Router>
     </div>
   );

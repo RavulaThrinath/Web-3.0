@@ -1,9 +1,9 @@
 import React from "react";
 import "./Nft.css";
-import BlogCover from "../Assets/BlogCoverr.svg";
-import NyanCat from '../Assets/nyan-cat-rainbow.gif'
+import BlogCover from "../../Assets/BlogCoverr.svg";
+import NyanCat from "../../Assets/nyan-cat-rainbow.gif";
 
-const Nft = () => {
+const Nft = (props) => {
   return (
     <div>
       <div className="Blog-head">
@@ -12,7 +12,7 @@ const Nft = () => {
       <div className="Blog-content-main">
         <div className="Blog-content">
           <h1 className="h1tag">
-            What You Need To Know About Non-Fungible Tokens (NFTs)
+            {props.mainTitle}
           </h1>
           <p className="blog-p">
             Non-fungible tokens (NFTs) seem to have exploded out of the ether

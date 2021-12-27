@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../Assets/logo.svg";
+import { Squeeze as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
   /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
@@ -15,30 +16,38 @@ const Navbar = () => {
     }
     prevScrollpos = currentScrollPos;
   };
+  const [click, setClick] = useState(false);
+  const handleClick = () => {
+    setClick(!click);
+  };
+
   return (
     <div className="nav" id>
       <div className="navbar" id="navbar">
         <img src={Logo} className="navbar-logo" alt="" />
-        <ul className="navbar-links">
+        <div className="hamburger">
+          <Hamburger onToggle={handleClick} size={25} />
+        </div>
+        <ul className={click ? "navbar-links active" : "navbar-links"}>
           <li>
-            <Link className="links" to="/">
+            <NavLink className="links" to="/" onToggle={handleClick}>
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="links" to="/about">
+            <NavLink className="links" to="/about" onToggle={handleClick} activeStyle>
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="links" to="/blogs">
+            <NavLink className="links" to="/blogs" onToggle={handleClick} activeStyle>
               Blog
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className="links" to="/contact">
+            <NavLink className="links" to="/contact" onToggle={handleClick} activeStyle>
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>

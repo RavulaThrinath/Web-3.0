@@ -7,6 +7,7 @@ import styled from "styled-components";
 // Styling Start
 const Main = styled.div`
   width: 100%;
+  margin-top:40px;
 `;
 
 const ArticleTitle = styled.div`
@@ -21,7 +22,7 @@ const ArticleTitle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px 0 80px 0;
+    padding: 70px 0 60px 0;
   }
   &:after {
     content: "";

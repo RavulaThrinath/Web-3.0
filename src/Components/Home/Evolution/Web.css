@@ -13,7 +13,7 @@ font-family: 'Overpass', sans-serif;
 
 .Web-main {
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 .title-parent {
@@ -57,7 +57,7 @@ font-family: 'Overpass', sans-serif;
     background: #f5f5f5;
     border-radius: 10px;
     box-shadow: 0 1px 10px #08070710;
-    transition: all .1s ease-out;
+    transition: all .2s ease-in-out;
     margin: 0 40px;
 }
 
@@ -69,22 +69,15 @@ font-family: 'Overpass', sans-serif;
 
 
 .parent1 {
-    display:block;
-    background: linear-gradient(to right, #ca2e4503 50%, white 50% ) ;
-    background-position: right bottom;
-    background-size: 200% 100%;
-
-}
-.parent1:hover {
-    background-position: left bottom;
+    background: #ca2e4510;
 }
 
 .parent2 {
-    background: #F2C14813;
+    background: #F2C14810;
 }
 
-.parent3{
-    background: #584AA913;
+.parent3 {
+    background: #584AA910;
 }
 
 .parent1 p,
