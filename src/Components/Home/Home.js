@@ -25,7 +25,7 @@ const Home = ({ background }) => {
     <div>
       <div className="home">
         <div className="CoverText">
-         <h1 className="title">Everything about<span className="title-span"> Blockchain Technology, Cryptocurrency, NFTs</span></h1>
+         <h1 className="title">Everything about <br /><span className="title-span"> Blockchain Technology, Cryptocurrency, NFTs</span></h1>
          <button className="css-button-rounded--black" onClick={communityClick}>Join Community</button>
         </div>
         <div className="CoverImage">
