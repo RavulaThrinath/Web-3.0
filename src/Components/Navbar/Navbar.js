@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-import Logo from "../Assets/Logo.svg";
+import Loogo from "../Assets/Logo.svg";
 import { Squeeze as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div className="nav" id>
       <div className="navbar" id="navbar">
-        <img src={Logo} className="navbar-logo" alt="" />
+        <img src={Loogo} className="navbar-logo" alt="" />
         <div className="hamburger">
           <Hamburger onToggle={handleClick} size={25} />
         </div>
