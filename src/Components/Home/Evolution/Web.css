@@ -72,7 +72,7 @@ text {
     left: 0;
     top: 12px;
 
-    background: linear-gradient(to right, #ca2e4530, #F2C14830, #584AA930);
+    /* background: linear-gradient(to right, #7783a0, #393e4990); */
     z-index: -1;
 }
 /* .web-title::before {
@@ -87,8 +87,6 @@ text {
 } */
 
 .main-parent {
-    /* max-width:1200px; */
-    /* margin: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,15 +113,15 @@ text {
 
 
 .parent1 {
-    background: #ca2e4510;
+    background: #303f6010;
 }
 
 .parent2 {
-    background: #F2C14810;
+    background: #303f6010;
 }
 
 .parent3 {
-    background: #584AA910;
+    background: #303f6010;
 }
 
 .parent1 p,
@@ -164,17 +162,17 @@ text {
 
 .parent1 p::before {
     content: "Web 1.0";
-    background: #ca2e46;
+    background: #303f60;
 }
 
 .parent2 pp::before {
     content: "Web 2.0";
-    background: #F2C148;
+    background: #303f60;
 }
 
 .parent3 ppp::before {
     content: "Web 3.0";
-    background: #584AA9;
+    background: #303f60;
 }
 
 .parent1 p::after,
@@ -190,18 +188,19 @@ text {
 }
 
 .parent1 p::after {
-    background: #c55062;
-    box-shadow: 110px -110px #c55062;
+    /* 303f60 */
+    background: #18233b;
+    box-shadow: 110px -110px #18233b;
 }
 
 .parent2 pp::after {
-    background: #e0a91c;
-    box-shadow: 110px -110px #e0a91c;
+    background: #18233b;
+    box-shadow: 110px -110px #18233b;
 }
 
 .parent3 ppp::after {
-    background: #3f3386;
-    box-shadow: 110px -110px #3f3386;
+    background: #18233b;
+    box-shadow: 110px -110px #18233b;
 }
 
 .parent-text {
@@ -251,4 +250,27 @@ text {
     margin-bottom:7px;
     font-weight: 800;
     color: #202020;
+}
+
+@media (max-width:500px) {
+    .main-parent {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent1,
+.parent2,
+.parent3 {
+    position: relative;
+    width: 80%;
+    height: 270px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px #08070710;
+    transition: all .2s ease-in-out;
+    margin: 0 40px;
+}
 }
