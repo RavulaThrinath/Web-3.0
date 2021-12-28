@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-import mainLogo from "../Assets/Logo.svg"
+import mainLogo from "../Assets/Web3Logo.svg"
 import { Squeeze as Hamburger } from "hamburger-react";
 
 const Navbar = () => {
