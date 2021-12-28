@@ -32,6 +32,7 @@ font-family: 'Overpass', sans-serif; */
 .navbar-logo {
   width: 7%;
   height: auto;
+  padding: 10px;
 }
 
 .navbar-links {
@@ -80,6 +81,7 @@ font-family: 'Overpass', sans-serif; */
   .navbar-logo {
     width: 22%;
     height: auto;
+    
   }
   .navbar-links {
     display: flex;
