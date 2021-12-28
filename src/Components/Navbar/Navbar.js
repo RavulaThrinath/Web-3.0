@@ -30,22 +30,22 @@ const Navbar = () => {
         </div>
         <ul className={click ? "navbar-links active" : "navbar-links"}>
           <li>
-            <NavLink className="links" to="/" onToggle={handleClick}>
+            <NavLink className="links" to="/" >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink className="links" to="/about" onToggle={handleClick} activeStyle>
+            <NavLink className="links" to="/about"  activeStyle>
               About
             </NavLink>
           </li>
           <li>
-            <NavLink className="links" to="/blogs" onToggle={handleClick} activeStyle>
+            <NavLink className="links" to="/blogs"  activeStyle>
               Blog
             </NavLink>
           </li>
           <li>
-            <NavLink className="links" to="/contact" onToggle={handleClick} activeStyle>
+            <NavLink className="links" to="/contact"  activeStyle>
               Contact
             </NavLink>
           </li>
