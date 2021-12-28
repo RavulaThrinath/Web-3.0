@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="navbar" id="navbar">
         <img src={mainLogo} className="navbar-logo" alt="" />
         <div className="hamburger">
-          <Hamburger onToggle={handleClick} size={25} />
+          <Hamburger onClick={handleClick} size={25} />
         </div>
         <ul className={click ? "navbar-links active" : "navbar-links"}>
           <li>
