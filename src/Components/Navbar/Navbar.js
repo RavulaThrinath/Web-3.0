@@ -30,22 +30,22 @@ const Navbar = () => {
         </div>
         <ul className={click ? "navbar-links active" : "navbar-links"}>
           <li>
-            <NavLink className="links" to="/" >
+            <NavLink className="links" to="/" onClick={handleClick}>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink className="links" to="/about"  activeStyle>
+            <NavLink className="links" to="/about" onClick={handleClick} activeStyle>
               About
             </NavLink>
           </li>
           <li>
-            <NavLink className="links" to="/blogs"  activeStyle>
+            <NavLink className="links" to="/blogs" onClick={handleClick} activeStyle>
               Blog
             </NavLink>
           </li>
           <li>
-            <NavLink className="links" to="/contact"  activeStyle>
+            <NavLink className="links" to="/contact" onClick={handleClick} activeStyle>
               Contact
             </NavLink>
           </li>
