@@ -14,22 +14,68 @@ font-family: 'Overpass', sans-serif;
 .Web-main {
     width: 100%;
     height: auto;
+    margin-top: 80px;
+}
+.future {
+    position: relative;
+    font-size: 20px;
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 7px;
+    text-transform: lowercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 70px 0 60px 0; */
+}
+.future::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    width: 160px;
+    height: .5px;
+    border-radius: 10px;
+    background: #00000021;
 }
 
 .title-parent {
     text-align: center;
-    margin: 50px 0 80px 0;
+    max-width: 850px;
+    margin: auto;
 }
 
 .web-title {
     position: relative;
-    color: #222222;
-    font-size: 33px;
-    font-family: "Noe Display Bold", sans-serif;
+    color: #3b3b3b;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
     letter-spacing: .5px;
-    font-weight: 800;
+    font-weight: 400;
+    margin: 50px 0 80px 0;
+    line-height: 30px;
 }
-.web-title::before {
+text {
+    font-size: 2px;
+}
+.web-title span {
+    font-weight: 600;
+    position: relative;
+    text-transform: capitalize;
+    color: #000000;
+}
+.web-title span::after {
+    content: "";
+    position: absolute;
+    width: 252px;
+    height: 15px;
+    left: 0;
+    top: 12px;
+
+    background: linear-gradient(to right, #ca2e4530, #F2C14830, #584AA930);
+    z-index: -1;
+}
+/* .web-title::before {
     content: "";
     position:absolute;
     background: #6d6d6d2d;
@@ -38,7 +84,7 @@ font-family: 'Overpass', sans-serif;
     top: 50px;
     left: 50%;
     transform: translate(-50%);
-}
+} */
 
 .main-parent {
     /* max-width:1200px; */
@@ -159,8 +205,8 @@ font-family: 'Overpass', sans-serif;
 }
 
 .parent-text {
-    font-size: 17px;
-    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     width: 80%;
     line-height: 20px;
@@ -200,8 +246,9 @@ font-family: 'Overpass', sans-serif;
 }
 .Context {
     font-size: 20px;
-    font-family: "Noe Display Bold", sans-serif;
-    /* text-transform: uppercase; */
+    font-family: "Lato", cursive;
+    text-transform: capitalize;
     margin-bottom:7px;
     font-weight: 800;
+    color: #202020;
 }

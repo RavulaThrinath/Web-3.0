@@ -1,7 +1,5 @@
 import React from "react";
 import Blogcard from "../../Blog card/Blogcard";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
 // Styling Start
@@ -37,7 +35,10 @@ const ArticleTitle = styled.div`
 const ArticleList = styled.div`
   display: flex;
   flex-wrap: wrap;
+  gap:40px;
   align-items: center;
+  max-width:1000px;
+  margin:auto;
   justify-content: center;
 `;
 const ArrowButton = styled.div`
@@ -49,27 +50,7 @@ const Item = styled.div`
   width: 200px;
   height: 50px;
   margin: auto;
-`;
-const CheckoutBtn = styled.button`
-  & {
-    border: 1px solid white;
-    background: none;
-    width: 100%;
-    padding: 15px;
-    font-size: 15px;
-    border-radius: 3px;
-    font-family: "Lato", sans-serif;
-    text-transform: capitalize;
-    color: white;
-    transition: all 0.5s ease;
-    cursor: pointer;
-  }
-  &:hover {
-    background: white;
-    color: black;
-    font-weight: normal;
-  }
-`;
+`
 
 const Article = ({ containerTitle, buttonName }) => {
   const navToBlog = () => {
@@ -91,13 +72,9 @@ const Article = ({ containerTitle, buttonName }) => {
       </ArticleList>
       <ArrowButton className="arrow-btn">
         <Item class="item">
-          <CheckoutBtn className="all-btn" type="button" onClick={navToBlog}>
+          <button className="all-btn" type="button" onClick={navToBlog}>
             {buttonName}
-            <FontAwesomeIcon
-              icon={faArrowRight}
-              className="arrow1"
-            ></FontAwesomeIcon>
-          </CheckoutBtn>
+          </button>
         </Item>
       </ArrowButton>
     </Main>

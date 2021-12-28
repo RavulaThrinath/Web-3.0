@@ -9,7 +9,6 @@ import Contact from "../src/Components/Contact/Contact";
 import Scrolltop from "./Components/ScrollTop/Scrolltop";
 import Nft from "./Components/ArticlesPage/NFT/Nft";
 import Blockchainmap from "./Components/ArticlesPage/BlockchainMap/Blockchainmap";
-import Footer from "../src/Components/Footer/Footer"
 
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
           <Route exact path="/Blockchain" element={<Blockchainmap mainTitle={`How to become a blockchain developer`}  />}></Route>
         </Routes>
         <Scrolltop />
-        <Footer />
         </Router>
     </div>
   );

@@ -11,8 +11,14 @@ const Web = () => {
   const Web3 = `Web 3.0 is the internet owned by the builders and users, orchestrated with tokens.`;
   return (
     <div className="Web-main">
+    <div className="future">Our Future</div>
       <div className="title-parent">
-        <div class="web-title">The Evolution of WEB</div>
+        <div class="web-title">
+          You've probably heard about <strong>Web 3.0</strong> unless you've been living under a
+          rock. Web 3.0 is the next step in the web's growth, and it aims to
+          make the internet more intelligent. Before learning more about Web3,
+          let's understand <span>The Evolution of the WEB</span> first
+        </div>
       </div>
       <div className="main-parent">
         <div className="parent1">
