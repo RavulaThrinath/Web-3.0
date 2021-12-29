@@ -16,17 +16,31 @@ const Home = ({ background }) => {
     }
   };
   window.addEventListener("scroll", arrowVisible);
-  
+
   const communityClick = () => {
-    window.open('https://discord.com/invite/D9zSEMnU')
-  }
+    window.open("https://discord.com/invite/D9zSEMnU");
+  };
 
   return (
     <div>
       <div className="home">
         <div className="CoverText">
-         <h1 className="title">Everything about <br /><span className="title-span"> Blockchain Technology, Cryptocurrency, NFTs</span></h1>
-         <button className="css-button-rounded--black" onClick={communityClick}>Join Community</button>
+          <div className="maintitlee">
+            <h1 className="title">
+              Hey, You've probably heard about <special>Web 3</special> unless
+              you've been living under a rock. <br />
+            </h1>
+            <span className="title-span">
+              Web 3 is the next step in the web's growth, and <br /> it aims to
+              make the internet more intelligent.
+            </span>
+          </div>
+          <button
+            className="css-button-rounded--black"
+            onClick={communityClick}
+          >
+            Join Community
+          </button>
         </div>
         <div className="CoverImage">
           <img src={CoverImage} alt="" />
@@ -39,7 +53,7 @@ const Home = ({ background }) => {
       </div>
       <Web />
 
-      <Article containerTitle="latest Blogs" buttonName="Checkout all Blogs" />
+      <Article buttonName="Checkout all Blogs" />
     </div>
   );
 };
