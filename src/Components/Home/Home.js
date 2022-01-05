@@ -3,7 +3,6 @@ import Article from "./Articles.js/Article";
 import "./Home.css";
 import CoverImage from "../Assets/MainCoverrr.svg";
 import Web from "./Evolution/Web";
-// import styled from "styled-components";
 
 const Home = ({ background }) => {
   const [arrow, setArrow] = useState(true);

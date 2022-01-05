@@ -4,7 +4,7 @@
 font-family: 'Outfit', sans-serif;
 font-family: 'Overpass', sans-serif; */
 body {
-    background-color: #EEEEEE;
+    background-color: #ffffff;
 }
 
 .home {
@@ -24,7 +24,7 @@ body {
     max-width: 600px;
     margin: auto;
     /* position: relative; */
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'outfit', sans-serif;
     text-align: start;
     font-weight: 700;
@@ -36,11 +36,11 @@ special {
 }
 .title-span {
     max-width: 200px;
-    font-size: 25px;
+    font-size: 20px;
     color: #696969;
     font-family: 'outfit', sans-serif;
     font-weight: 400;
-    line-height: 35px;
+    line-height: 30px;
 }
 
 .CoverImage {
@@ -77,7 +77,7 @@ special {
         line-height: 45px;
     }
     .title-span {
-        color: #303f60;
+        color: #475579;
         font-weight: 700;
     }
     
@@ -104,8 +104,8 @@ special {
     display: block;
     width: 10px;
     height: 10px;
-    border-bottom: 1px solid #444444;
-    border-right: 1px solid #444444;
+    border-bottom: 1px solid #757575;
+    border-right: 1px solid #757575;
     transform: rotate(45deg);
     animation: animate 2s infinite;
 }
@@ -147,9 +147,9 @@ special {
     outline: none;
     font-family:'Outfit', sans-serif;
     text-transform: uppercase;
-    border: 2px solid #303f60;
+    border: 2px solid #475579;
     border-radius: 2px;
-    background: #303f60;
+    background: #475579;
     margin-top: 20px;
     margin-left: 5px;
     letter-spacing: 1px;

@@ -1,7 +1,8 @@
 import React from "react";
+import "../Home/Articles.js/Article.css"
 import Blogcard from "../Blog card/Blogcard";
-// import Navbar from "../Navbar/Navbar";
 import styled from "styled-components";
+import {Link} from "react-router-dom"
 
 const BlogContainer = styled.div`
   padding: 400px 30px;
@@ -13,7 +14,32 @@ const BlogContainer = styled.div`
 const Blogs = () => {
   return (
     <BlogContainer className="blog-container">
-      <Blogcard />
+    <div className="blog-list">
+    <Link to="/nft" className="bloglink">
+      <Blogcard blogtitle={`What \n is nft?`} />
+    </Link>
+    <Link to="/Blockchain" className="bloglink">
+      <Blogcard blogtitle={`Is web 3.o \n all hype? `} />
+    </Link>
+    <Link to="/Blockchain" className="bloglink">
+      <Blogcard blogtitle={`Is web 3.o \n all hype? `} />
+    </Link>
+    <Link to="/Blockchain" className="bloglink">
+      <Blogcard blogtitle={`What \n is nft?`} />
+    </Link>
+    <Link to="/Blockchain" className="bloglink">
+      <Blogcard blogtitle={`Is web 3.o \n all hype? `} />
+    </Link>
+    <Link to="/Blockchain" className="bloglink">
+      <Blogcard blogtitle={`Is web 3.o \n all hype? `} />
+    </Link>
+    <Link to="/Blockchain" className="bloglink">
+      <Blogcard blogtitle={`Is web 3.o \n all hype? `} />
+    </Link>
+    <Link to="/Blockchain" className="bloglink">
+      <Blogcard blogtitle={`Is web 3.o \n all hype? `} />
+    </Link>
+  </div>
     </BlogContainer>
   );
 };

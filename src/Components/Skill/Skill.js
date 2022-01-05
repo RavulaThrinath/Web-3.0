@@ -8,8 +8,8 @@ const Skill = ({ icon, circle }) => {
   return (
     <div>
       <div className="skill-container">
-        <div className="skill-icon">{icon}
-        <div className="circular">{circle}</div>
+        <div className="skill-icon">
+        <img src={icon} alt="" width="80px"/>
         </div>
       </div>
     </div>

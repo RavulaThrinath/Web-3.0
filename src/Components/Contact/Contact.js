@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 // import styled from 'styled-components';
 import emailjs from "emailjs-com";
+// import Heart from "react-animated-heart";
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -11,6 +12,8 @@ const Contact = () => {
       .sendForm(
         "service_qnop8yb",
         "template_kj9cy0i",
+
+
         e.target,
         "user_U7ZiZc36EM1CcKPhTxJGu"
       )
@@ -28,7 +31,10 @@ const Contact = () => {
   return (
     <div>
       <div className="formContainer">
-      <p> </p>
+     <p> </p>
+     <div className="contact-text">Please feel free to drop me a line. I'll get back to you as soon as I can. That's a promise!
+     </div>
+      
         <form onSubmit={sendEmail} className="formclass">
         <div class="group">      
         <input type="text" required />
@@ -51,6 +57,7 @@ const Contact = () => {
       </div>
           <button type="submit" className="css-button-3d-sky">Submit</button>
         </form>
+       
         
       </div>
     </div>
@@ -58,3 +65,9 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+// <Heart isClick={isClick} onClick={() => setClick(!isClick)} />
+
+// const [isClick, setClick] = useState(false);
+// const [count, setCount] = useState(10);

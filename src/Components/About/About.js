@@ -4,30 +4,23 @@ import Skill from "../Skill/Skill";
 import Aboutimage from "../Assets/Aboutt.svg";
 import Typed from "react-typed";
 import "react-typed/dist/animatedCursor.css";
-import {
-  FaCss3Alt,
-  FaHtml5,
-  FaReact,
-  FaJs,
-  FaGitAlt,
-  FaFigma,
-} from "react-icons/fa";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import Process from "../Assets/Process.svg"
 // import Footer from "../Footer/Footer";
 
 const About = ({ circle, icon }) => {
   return (
     <div>
       <div className="about-container">
-      <div>
-      <img src={Aboutimage} className="about-image" alt="" />
-    </div>
+        <div>
+          <img src={Aboutimage} className="about-image" alt="" />
+        </div>
         <div className="about-left">
           <div className="name">
             Hi, My Name is
             <span className="span-name"> Thrinath,</span> <br /> I'm a
-            <span className="span-name"> Web
+            <span className="span-name">
               {" "}
+              Web{" "}
               <Typed
                 strings={["Developer", "Designer"]}
                 typeSpeed={100}
@@ -38,47 +31,30 @@ const About = ({ circle, icon }) => {
           </div>
           <div className="about-content">
             <p>
-              I Pursued B.E in Computer Science as a main stream in sathyabama
-              University. Looking to start the career as an entry-level Web
-              Developer. Passionate about implementing and launching new
-              projects.
+              {` I Pursued B.E in Computer Science as a main stream in sathyabama
+             University, Chennai. I'm Looking to start my career as an entry-level Web
+             Developer. Passionate about implementing and launching new
+             projects.`}
             </p>
           </div>
         </div>
       </div>
       <div className="Skill-container">
-        <h1 className="skill-title">Technical Skills</h1>
-        <div className="Skillset">
-          <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti,
-            esse. Molestias dolor rerum placeat magni commodi tenetur quasi aut
-            cumque!
-          </div>
-          <div className="skill-section">
-            <Skill
-              icon={<FaHtml5 className="icons" />}
-              circle={
-                <CircularProgressbar
-                  value='90%'
-                  text={`${90}%`}
-                  background
-                  backgroundPadding={6}
-                  styles={buildStyles({
-                    backgroundColor: "#3e98c7",
-                    textColor: "#fff",
-                    pathColor: "#fff",
-                    trailColor: "transparent",
-                  })}
-                />
-              }
-            />
-            <Skill icon={<FaCss3Alt className="icons" />} />
-            <Skill icon={<FaJs className="icons" />} />
-            <Skill icon={<FaReact className="icons" />} />
-            <Skill icon={<FaGitAlt className="icons" />} />
-            <Skill icon={<FaFigma className="icons" />} />
+        <h1 className="skill-title">My Development Process</h1>
+        <div className="devprocess">
+          <div className="rule1">
+           <img src={Process} alt="" />
           </div>
         </div>
+        <h1 className="skill-title">technical skillset</h1>
+        <div className="Skillset">
+            <Skill icon="https://img.icons8.com/color/480/000000/html-5--v1.png" />
+            <Skill icon="https://img.icons8.com/color/480/000000/css3.png" />
+            <Skill icon="https://img.icons8.com/color/480/000000/javascript--v1.png" />
+            <Skill icon="https://img.icons8.com/color/480/000000/react-native.png" />
+            <Skill icon="https://img.icons8.com/ios-glyphs/480/000000/github.png" />
+            <Skill icon="https://img.icons8.com/fluency/480/000000/figma.png" />
+          </div>
       </div>
     </div>
   );
